@@ -1,21 +1,77 @@
-# --- Python ---
+# -------------------------
+# PYTHON
+# -------------------------
 __pycache__/
 *.py[cod]
+*.$py.class
 
-# Виртуальные окружения
+# Virtual environment
 venv/
-.env/
-*.env
+env/
+.venv/
+ENV/
 
-# --- Node / React ---
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Local config
+*.env
+*.env.*
+.env.local
+backend/.env
+backend/.env.*
+
+# SQLite (если были)
+*.db
+*.sqlite3
+
+# -------------------------
+# NODE / FRONTEND (VITE)
+# -------------------------
+
+# Dependencies
 node_modules/
+
+# Dist build
 dist/
 build/
-*.log
 
-# MacOS
+# Optional cache
+.cache/
+.vite/
+vite.config.ts.timestamp*
+vite.config.js.timestamp*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+frontend/.env
+frontend/.env.*
+
+# -------------------------
+# MACOS SYSTEM FILES
+# -------------------------
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
 
-# IDE
-.idea/
+# -------------------------
+# EDITORS
+# -------------------------
 .vscode/
+.idea/
+
+# -------------------------
+# OTHER
+# -------------------------
+*.log
